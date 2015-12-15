@@ -45,3 +45,12 @@ salmon quant -p 32 -i transcripts2_index -l MSR \
 -1 <(gzip -cd ../harmonia_larva.R1.fastq.gz) \
 -2 <(gzip -cd ../harmonia_larvae.R2.fastq.gz) -o salmon_larva
 ```
+
+dammit!
+--
+
+```
+dammit databases --install --busco-group arthopoda --database-dir /mnt/dammit/
+dammit annotate Harmonia.v1.0.1.fasta --busco-group arthropoda --n_threads 36 --database-dir /mnt/dammit/  
+```
+
