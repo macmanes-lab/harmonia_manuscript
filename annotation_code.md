@@ -60,3 +60,10 @@ signalP
 ```
 signalp -v ../Harmonia.v1.0.1.fasta > Harmonia.v1.0.1.signalP
 ```
+
+blast
+--
+
+```
+blastx -db ../uniprot_sprot -query Harmonia.v1.0.1.fasta -max_target_seqs 1 -outfmt 6 -evalue 1e-10 -num_threads 40 > adult.larva.blastx
+```
