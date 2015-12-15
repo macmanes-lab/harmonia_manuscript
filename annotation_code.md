@@ -54,3 +54,9 @@ dammit databases --install --busco-group arthopoda --database-dir /mnt/dammit/
 dammit annotate Harmonia.v1.0.1.fasta --busco-group arthropoda --n_threads 36 --database-dir /mnt/dammit/  
 ```
 
+signalP
+--
+
+```
+signalp -v ../Harmonia.v1.0.1.fasta > Harmonia.v1.0.1.signalP
+```
